@@ -1,4 +1,4 @@
-#include "Trajectory.hpp"
+/* #include "Trajectory.hpp"
 
 #define ResetMember(_mem) fields->trajectoryPlayer->_mem = player->_mem;
 #define RM ResetMember
@@ -488,4 +488,4 @@ $execute
             }
         };
     });
-}
+} */
