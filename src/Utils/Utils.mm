@@ -1,4 +1,4 @@
-/* #import "Utils.hpp"
+#import "Utils.hpp"
 
 cocos2d::CCRect getScreenSafeAreaiOS() {
     cocos2d::CCRect safeAreaInsets;
@@ -14,4 +14,4 @@ cocos2d::CCRect getScreenSafeAreaiOS() {
         safeAreaInsets = cocos2d::CCRect(0, 0, 0, 0);
     }
     return safeAreaInsets;
-} */
+}
