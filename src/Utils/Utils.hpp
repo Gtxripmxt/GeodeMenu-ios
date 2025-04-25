@@ -1,4 +1,4 @@
-/* #define MEMBERBYOFFSET(type, class, offset) *reinterpret_cast<type*>(reinterpret_cast<uintptr_t>(class) + offset)
+#define MEMBERBYOFFSET(type, class, offset) *reinterpret_cast<type*>(reinterpret_cast<uintptr_t>(class) + offset)
 #define MBO MEMBERBYOFFSET
 
 #define public_cast(value, member) [](auto* v) { \
@@ -74,4 +74,4 @@ std::string applyRTLFix(const std::string& str);
 namespace ImGuiExt
 {
 	void colouredText(std::string label);
-}; */
+};
