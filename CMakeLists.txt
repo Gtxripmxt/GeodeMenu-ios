@@ -45,7 +45,13 @@ add_definitions(-DQOLMOD_EXPORTING)
 # add_definitions(-DQOLMOD_CUSTOM_KEYS_SETTING)
 # add_definitions(-DCOMMENT_EMOJIS_INTEGRATION_ENABLED)
 
-CPMAddPackage("gh:TheSillyDoggo/gd-imgui-cocos#e3b5016") # should be geode
+if (NOT (APPLE AND (IOS OR CMAKE_SYSTEM_NAME STREQUAL "iOS")))
+    CPMAddPackage("gh:TheSillyDoggo/gd-imgui-cocos#e3b5016")
+    target_link_libraries(${PROJECT_NAME} imgui-cocos)
+endif()
+
+CPMAddPackage("gh:EclipseMenu/RIFT#main")
+target_link_libraries(${PROJECT_NAME} rift)
 CPMAddPackage("gh:EclipseMenu/RIFT#main")
 
 target_link_libraries(${PROJECT_NAME} imgui-cocos rift)
