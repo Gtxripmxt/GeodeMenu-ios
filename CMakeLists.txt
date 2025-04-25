@@ -44,12 +44,10 @@ add_definitions(-DQOLMOD_EXPORTING)
 
 if (NOT (APPLE AND (IOS OR CMAKE_SYSTEM_NAME STREQUAL "iOS")))
     CPMAddPackage("gh:TheSillyDoggo/gd-imgui-cocos#e3b5016")
-    target_link_libraries(${PROJECT_NAME} imgui-cocos)
 endif()
 
 CPMAddPackage("gh:EclipseMenu/RIFT#main")
 target_link_libraries(${PROJECT_NAME} rift)
-CPMAddPackage("gh:EclipseMenu/RIFT#main")
 
 target_link_libraries(${PROJECT_NAME} imgui-cocos rift)
 
