@@ -4,7 +4,6 @@
 #include <Geode/ui/TextInput.hpp>
 #include "../UI/UIComponent.hpp"
 #include "../Keybinds/KeyStruct.hpp"
-#include <imgui-cocos.hpp>
 
 using namespace geode::prelude;
 
