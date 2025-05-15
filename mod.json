@@ -33,7 +33,7 @@
     },
 	"settings": {
 		"set-bind": {
-                         "type": "custom",
+                         "type": "custom:i-dont-know"
 }
 	},
 	"tags": [
